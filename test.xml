@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="Untitled">
+    <Sequence>
+      <SetBlackboard value="testKey"
+                     output_key="testValue"/>
+      <Repeat num_cycles="50">
+        <Delay delay_msec="500">
+          <TestAction message="Action: get selected Model 2"/>
+        </Delay>
+      </Repeat>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="TestAction"
+            editable="true">
+      <input_port name="message"
+                  default="ddd"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>
